@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Github, Mail, Facebook } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ProfileImage from '../assets/Images/RieZhenzy.jpg';
-import ResumePDF from '../assets/documents/Zumel-Resume.pdf';
+import ResumePDF from '../assets/Documents/Zumel-Resume.pdf';
 
 const Home: React.FC = () => {
   return (

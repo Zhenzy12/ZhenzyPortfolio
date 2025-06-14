@@ -86,7 +86,7 @@ const Home: React.FC = () => {
             </AnimatedSection>
           </div>
           
-          <div className="lg:w-1/2 mt-12 lg:mt-0">
+          <div className="hidden lg:block lg:w-1/2 mt-12 lg:mt-0">
             <AnimatedSection delay={400}>
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 mx-auto">

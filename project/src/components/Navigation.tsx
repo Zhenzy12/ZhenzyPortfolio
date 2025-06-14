@@ -81,7 +81,7 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Navigation */}
       <div className={`md:hidden transition-all duration-300 ease-in-out ${
-        isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+        isOpen ? 'max-h-fit opacity-100' : 'max-h-0 opacity-0'
       } overflow-hidden bg-black/95 backdrop-blur-md`}>
         <div className="px-4 py-4 space-y-2">
           {navItems.map((item) => (

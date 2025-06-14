@@ -7,11 +7,13 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
-function App() {
+const App: React.FC = () => {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen bg-white dark:bg-black transition-colors duration-300">
           <Navigation />
           <Routes>
@@ -25,6 +27,6 @@ function App() {
       </Router>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

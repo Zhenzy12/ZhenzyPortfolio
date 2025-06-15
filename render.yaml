@@ -1,6 +1,6 @@
 static_sites:
-  - name: your-site-name
-    buildCommand: npm run build
+  - name: zhenzy-portfolio
+    buildCommand: npm install && npm run build
     staticPath: ./dist
     routes:
       - type: rewrite

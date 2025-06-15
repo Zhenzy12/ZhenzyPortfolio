@@ -7,28 +7,28 @@ import ResumePDF from '../assets/Documents/Zumel-Resume.pdf';
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black dark:bg-black text-white">
+    <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
         {/* Hero Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[80vh]">
-          <div className="lg:w-1/2 space-y-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[80vh] space-y-8 lg:space-y-0">
+          <div className="lg:w-1/2 space-y-8 text-gray-900 dark:text-white">
             <AnimatedSection>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                 Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent dark:from-emerald-300 dark:to-blue-400">
                   Rie Zhenzy Zumel
                 </span>
               </h1>
             </AnimatedSection>
             
-            <AnimatedSection delay={200}>
+            <AnimatedSection delay={200} className="text-gray-900 dark:text-white">
               <h2 className="text-2xl lg:text-3xl text-gray-300 font-light">
                 Computer Science Graduate & Developer
               </h2>
             </AnimatedSection>
             
             <AnimatedSection delay={400}>
-              <p className="text-lg text-gray-400 max-w-2xl leading-relaxed">
+              <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
                 Welcome to my portfolio! I'm Rie Zhenzy Zumel, a passionate Computer Science graduate from the University of Baguio. I specialize in full-stack development, blending creativity and technical expertise to build responsive web and mobile applications using technologies like React, Vue.js, Flutter, Laravel, and Tailwind CSS.
               </p>
             </AnimatedSection>
@@ -65,9 +65,9 @@ const Home: React.FC = () => {
                   <Github className="h-6 w-6 text-gray-400 group-hover:text-white" />
                 </a>
                 
-									<a href="https://www.facebook.com/rzhenzy/" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors group">
-										<Facebook className="h-6 w-6 text-gray-400 group-hover:text-white" />
-									</a>
+                <a href="https://www.facebook.com/rzhenzy/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                  <Facebook className="h-6 w-6 text-gray-400 group-hover:text-white" />
+                </a>
                 {/* <a
                   href="https://linkedin.com"
                   target="_blank"
@@ -77,8 +77,8 @@ const Home: React.FC = () => {
                   <Linkedin className="h-6 w-6 text-gray-400 group-hover:text-white" />
                 </a> */}
                 <a
-                  href="mailto:zumelriezhenzy@gmail.com"
-                  className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors group"
+                  href="mailto:zhenzyzumel@gmail.com"
+                  className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
                   <Mail className="h-6 w-6 text-gray-400 group-hover:text-white" />
                 </a>

@@ -1,0 +1,8 @@
+static_sites:
+  - name: your-site-name
+    buildCommand: npm run build
+    staticPath: ./dist
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/index.html"

@@ -1,13 +1,55 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ArrowRight, Download, Github, Mail, Facebook } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import ProfileImage from '../assets/Images/RieZhenzy.jpg';
 import ResumePDF from '../assets/Documents/Zumel-Resume.pdf';
 
+// Extend the Location type to include our custom state
+interface LocationState {
+  targetPath?: string;
+}
+
 const Home: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const locationState = location.state as LocationState | undefined;
+  const [hasProcessed, setHasProcessed] = React.useState(false);
+
+  React.useEffect(() => {
+    // Only process the redirect once when the component mounts
+    if (!hasProcessed) {
+      const targetPath = locationState?.targetPath;
+      
+      if (targetPath) {
+        // Small delay to ensure the home page is fully rendered
+        const timer = setTimeout(() => {
+          navigate(targetPath, { replace: true });
+        }, 100);
+        
+        return () => clearTimeout(timer);
+      }
+      
+      setHasProcessed(true);
+    }
+  }, [locationState, navigate, hasProcessed]);
+
+  // If we're processing a redirect, show a loading state
+  if (locationState?.targetPath && !hasProcessed) {
+    return (
+      <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center">
+        <div className="animate-pulse text-2xl dark:text-white">Loading...</div>
+      </div>
+    );
+  }
+
+
   return (
     <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300">
+      {/* Hidden element to ensure the page has content before redirection */}
+      <div className="sr-only" aria-hidden="true">Home page loading...</div>
+      {/* Hidden element to ensure the page has content before redirection */}
+      <div className="sr-only" aria-hidden="true">Home page loading...</div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
         {/* Hero Section */}
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-[80vh] space-y-8 lg:space-y-0">

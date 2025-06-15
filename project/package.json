@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp render.yaml dist/render.yaml",
+    "build": "vite build && copy render.yaml dist\\render.yaml",
     "lint": "eslint .",
     "preview": "vite preview"
   },

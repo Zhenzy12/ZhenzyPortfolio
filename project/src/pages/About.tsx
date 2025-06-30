@@ -101,31 +101,43 @@ const About: React.FC = () => {
 	  
 			  {/* About Story */}
 			  <div className="space-y-8">
-				<AnimatedSection delay={300}>
-				  <div className="bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-800 rounded-2xl p-8">
-					<h2 className="text-2xl font-bold mb-6 text-emerald-500 dark:text-emerald-400">My Story</h2>
-					<div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-					  <p>
-						My journey into the tech world kicked off when I decided to study
-						<span className="text-emerald-500 dark:text-emerald-400"> Computer Science at the University of Baguio</span>. At first, I was just a curious person wondering how all the software and systems around us actually work (I honestly thought coding was just about pressing random buttons!). But as I delved deeper into my studies, that curiosity blossomed into a real passion...
-					  </p>
-					  <p>
-						During my college years, I was exposed to a variety of technologies... <span className="text-emerald-500 dark:text-emerald-400">Vue.js, Laravel, SQL and Tailwind CSS</span>.
-					  </p>
-					  <p>
-						Another highlight of my college experience was our thesis project called
-						<span className="text-emerald-500 dark:text-emerald-400"> AgriTayo</span>, an eCommerce platform... <span className="text-emerald-500 dark:text-emerald-400">React.js, React Native, and Express.js</span>.
-					  </p>
-					  <p>
-						In addition to my development projects, I delved into the field of
-						<span className="text-emerald-500 dark:text-emerald-400"> Artificial Intelligence</span>...
-					  </p>
-					  <p>
-						All of these experiences, along with my coursework, hackathons, and personal projects...
-					  </p>
-					</div>
-				  </div>
-				</AnimatedSection>
+						<AnimatedSection delay={300}>
+							<div className="bg-gray-100 dark:bg-gray-900/50 border border-gray-300 dark:border-gray-800 rounded-2xl p-8">
+								<h2 className="text-2xl font-bold mb-6 text-emerald-600 dark:text-emerald-400">My Story</h2>
+								<div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+									<p>
+										My journey into the tech world kicked off when I decided to study
+										<span className="text-emerald-600 dark:text-emerald-400"> Computer Science at the University of Baguio</span>
+										. At first, I was just a curious person wondering how all the software and systems around us actually work (I honestly thought coding was just about pressing random buttons!). But as I delved deeper into my studies, that curiosity blossomed into a real passion. I discovered how exciting it is to create useful, meaningful, and impactful solutions through coding, and I can't wait to see where this adventure takes me!
+									</p>
+									<p>
+										During my college years, I was exposed to a variety of technologies and real-world applications that enhanced both my technical abilities and problem-solving skills. One of the most valuable experiences I had was during my internship, where I worked on the
+										<span className="text-emerald-600 dark:text-emerald-400"> Baguio City Smart City Command and Control Center Inventory System</span>
+										. This project provided me with hands-on experience in developing a full-stack application using
+										<span className="text-emerald-600 dark:text-emerald-400"> Vue.js, Laravel, SQL and Tailwind CSS</span>
+										. This experience was my first encounter with how technology can improve government processes and daily operations, ultimately making public service more efficient.
+									</p>
+									<p>
+										Another highlight of my college experience was our thesis project called
+										<span className="text-emerald-600 dark:text-emerald-400"> AgriTayo</span>, an eCommerce platform designed to connect local farmers directly with buyers. This project not only enhanced my skills in
+										<span className="text-emerald-600 dark:text-emerald-400"> React.js, React Native, and Express.js </span>
+										but also made me realize the potential of technology to positively impact communities by bridging the gap between producers and consumers in the agricultural sector. We deployed the system using Azure services, and I contributed by leading the whole team and writing the complete technical documentation for the project, which significantly improved my attention to detail and technical writing skills.
+									</p>
+									<p>
+										In addition to my development projects, I delved into the field of
+										<span className="text-emerald-600 dark:text-emerald-400"> Artificial Intelligence </span>
+										by creating a model that
+										<span className="text-emerald-600 dark:text-emerald-400"> predicts student employability </span>
+										based on various factors using
+										<span className="text-emerald-600 dark:text-emerald-400"> Python and scikit-learn</span>. This research provided me with a deeper understanding of machine learning principles and their applications in the real world.
+									</p>
+									<p>
+										All of these experiences, along with my coursework, hackathons, and personal projects, really helped shape me into a versatile and flexible developer. I learned a lot about teamwork, patience, and the importance of always learning—skills I'll take with me as I dive into the professional world. College wasn't just about picking up technical skills; it was an incredible journey of growth, self-discovery, and building my confidence in creating meaningful
+										solutions.
+									</p>
+								</div>
+							</div>
+						</AnimatedSection>
 			  </div>
 			</div>
 		  </div>
